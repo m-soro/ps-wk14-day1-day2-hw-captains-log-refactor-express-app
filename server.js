@@ -39,6 +39,13 @@ db.on("close", () => console.log("mongo disconnected"));
 app.use("/logs", logController);
 app.use("/foodlogs", foodLogController);
 
+// -------------
+// HOME
+// -------------
+app.get("/", (req, res) => {
+  res.render("logs/Home");
+});
+
 app.listen(process.env.PORT || 3000, () => {
   console.log("listening");
 });

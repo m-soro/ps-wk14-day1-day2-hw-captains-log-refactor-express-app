@@ -15,7 +15,7 @@ class DefaultLayout extends React.Component {
             <nav aria-label="breadcrumb">
               <ul>
                 <li>
-                  <a href="/logs">Home</a>
+                  <a href="/">Home</a>
                 </li>
                 <li>
                   <a href="/logs/index"> View Logs</a>

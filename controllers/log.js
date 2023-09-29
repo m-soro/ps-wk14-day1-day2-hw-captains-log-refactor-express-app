@@ -9,12 +9,7 @@ router.get("/seed-log", async (req, res) => {
   await Log.insertMany(logsData);
   console.log("Seed is done!");
 });
-// -------------
-// HOME
-// -------------
-router.get("/logs", (req, res) => {
-  res.render("logs/Home");
-});
+
 // -------------
 // INDEX
 // -------------
@@ -94,10 +89,6 @@ router.get("/:id", async (req, res) => {
   } catch (error) {
     console.log(error);
   }
-});
-
-router.get("/*", function (req, res) {
-  res.render("logs/Home");
 });
 
 module.exports = router;
