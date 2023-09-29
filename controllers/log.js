@@ -12,7 +12,7 @@ router.get("/seed-log", async (req, res) => {
 // -------------
 // HOME
 // -------------
-router.get("/", (req, res) => {
+router.get("/logs", (req, res) => {
   res.render("logs/Home");
 });
 // -------------
@@ -94,6 +94,10 @@ router.get("/:id", async (req, res) => {
   } catch (error) {
     console.log(error);
   }
+});
+
+router.get("/*", function (req, res) {
+  res.render("logs/Home");
 });
 
 module.exports = router;
