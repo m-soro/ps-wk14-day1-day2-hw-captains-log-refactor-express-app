@@ -1,0 +1,45 @@
+.time-stamps {
+  display: flex;
+  gap: 0.5em;
+}
+
+.article-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5em;
+  padding-bottom: 0;
+}
+
+.article-header h3 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.article-header div h2 {
+  margin-bottom: 1em;
+}
+
+.article-header p {
+  font-size: smaller;
+}
+
+.snippet-text {
+  font-size: smaller;
+  margin-bottom: -1em;
+  padding-bottom: -1em;
+}
+
+.article-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.article-footer a {
+  height: fit-content;
+}
+
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
